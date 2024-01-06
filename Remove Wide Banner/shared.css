@@ -26,8 +26,13 @@
     position: relative !important;
 }
 
+.gamepadhome_RecentSection_39tNv .appportrait_PortraitImage_2IYf7.appportrait_Landscape_3VOR2
+{
+    height: 100%;
+}
+
 .gamepadhome_RecentSection_39tNv .appportrait_FeaturedCapsule_xp7A- img
 {
-    object-fit: cover; /* fill? */
+    object-fit: var(--remove-wide-banner-image-fit) !important;
     height: var(--remove-wide-banner-height);
 }
