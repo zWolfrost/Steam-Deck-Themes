@@ -1,0 +1,33 @@
+:root {
+    --remove-wide-banner-padded-width: 145px;
+    --remove-wide-banner-width: 133px;
+    --remove-wide-banner-height: 199.5px
+}
+
+.gamepadhome_RecentSection_39tNv .ReactVirtualized__Grid__innerScrollContainer > div,
+.gamepadhome_RecentSection_39tNv .basicgamecarousel_BasicGameCarouselItem_3YYQ9
+{
+    width: var(--remove-wide-banner-padded-width) !important;
+}
+
+.gamepadhome_RecentSection_39tNv .basicgamecarousel_BasicGameCarouselItemMediaContainer_1HIFN
+{
+    width: var(--remove-wide-banner-width) !important;
+}
+
+.gamepadhome_RecentSection_39tNv .ReactVirtualized__Grid__innerScrollContainer
+{
+    display: flex;
+}
+
+.gamepadhome_RecentSection_39tNv .ReactVirtualized__Grid__innerScrollContainer > div
+{
+    left: auto !important;
+    position: relative !important;
+}
+
+.gamepadhome_RecentSection_39tNv .appportrait_FeaturedCapsule_xp7A- img
+{
+    object-fit: cover; /* fill? */
+    height: var(--remove-wide-banner-height);
+}
