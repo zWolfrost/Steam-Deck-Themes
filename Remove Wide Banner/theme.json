@@ -1,15 +1,13 @@
 {
 	"name": "Remove Wide Banner",
 	"author": "zWolfrost",
-	"target": "System-Wide",
-	"version": "v2.0",
-	"description": "This theme will replace the wide banner of the last played aka featured game with a capsule. This will unfortunately require to cut the image banner to fit. Big thanks to MSeys, whose themes' css helped me a lot.",
+	"target": "Tweak",
+	"version": "v2.1",
+	"description": "This theme will replace the wide capsule banner of the last played game aka featured game with a capsule.",
 	"manifest_version": 5,
 	"inject": {
 		"shared.css": [
-			"SP",
-			"QuickAccess",
-			"MainMenu"
+			"bigpicture"
 		]
 	},
 	"dependencies": {},
@@ -20,23 +18,17 @@
 			"values": {
 				"Cover": {
 					"image-fit-cover.css": [
-						"SP",
-						"MainMenu",
-						"QuickAccess"
+						"bigpicture"
 					]
 				},
 				"Fill": {
 					"image-fit-fill.css": [
-						"SP",
-						"MainMenu",
-						"QuickAccess"
+						"bigpicture"
 					]
 				},
 				"Contain": {
 					"image-fit-contain.css": [
-						"SP",
-						"MainMenu",
-						"QuickAccess"
+						"bigpicture"
 					]
 				}
 			},
