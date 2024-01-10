@@ -1,38 +1,24 @@
 :root {
-    --remove-wide-banner-padded-width: 145px;
-    --remove-wide-banner-width: 133px;
-    --remove-wide-banner-height: 199.5px
+    --RWB-capsule-width: 133px;
+    --RWB-translate-x: -293.837px;
 }
 
-.gamepadhome_RecentSection_39tNv .ReactVirtualized__Grid__innerScrollContainer > div,
-.gamepadhome_RecentSection_39tNv .basicgamecarousel_BasicGameCarouselItem_3YYQ9
-{
-    width: var(--remove-wide-banner-padded-width) !important;
+/* set banner width */
+.gamepadhome_RecentSection_39tNv .basicgamecarousel_Featured_2eJEJ {
+	width: var(--RWB-capsule-width) !important;
 }
 
-.gamepadhome_RecentSection_39tNv .basicgamecarousel_BasicGameCarouselItemMediaContainer_1HIFN
-{
-    width: var(--remove-wide-banner-width) !important;
+/* move capsules to left */
+.gamepadhome_RecentSection_39tNv .ReactVirtualized__Grid__innerScrollContainer > div:not(:first-child) {
+	transform: translateX(var(--RWB-translate-x));
 }
 
-.gamepadhome_RecentSection_39tNv .ReactVirtualized__Grid__innerScrollContainer
-{
-    display: flex;
+/* set banner image height to the banner's */
+.gamepadhome_RecentSection_39tNv .appportrait_PortraitImage_2IYf7.appportrait_Landscape_3VOR2 {
+	height: 100%;
 }
 
-.gamepadhome_RecentSection_39tNv .ReactVirtualized__Grid__innerScrollContainer > div
-{
-    left: auto !important;
-    position: relative !important;
-}
-
-.gamepadhome_RecentSection_39tNv .appportrait_PortraitImage_2IYf7.appportrait_Landscape_3VOR2
-{
-    height: 100%;
-}
-
-.gamepadhome_RecentSection_39tNv .appportrait_FeaturedCapsule_xp7A- img
-{
-    object-fit: var(--remove-wide-banner-image-fit) !important;
-    height: var(--remove-wide-banner-height);
+/* fit image to banner */
+.gamepadhome_RecentSection_39tNv .appportrait_FeaturedCapsule_xp7A- img {
+    object-fit: var(--RWB-image-fit) !important;
 }

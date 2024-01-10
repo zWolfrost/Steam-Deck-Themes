@@ -1,3 +1,1 @@
-:root {
-    --remove-wide-banner-image-fit: cover;
-}
+:root { --RWB-image-fit: cover; }
