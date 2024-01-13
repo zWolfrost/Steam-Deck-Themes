@@ -3,7 +3,7 @@
 	"display_name": "Edit Featured Banner",
 	"author": "zWolfrost",
 	"target": "Tweak",
-	"version": "v3.1",
+	"version": "v3.2",
 	"description": "This theme will edit the banner of the last played game aka featured game to be a capsule or a square (depending on your preference).",
 	"manifest_version": 9,
 	"inject": {
