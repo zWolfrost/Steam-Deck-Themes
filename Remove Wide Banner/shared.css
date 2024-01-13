@@ -1,16 +1,15 @@
 :root {
-    --RWB-capsule-width: 133px;
-    --RWB-translate-x: -293.837px;
+   --RWB-beg-width: 426.837px;
 }
 
 /* set banner width */
 .gamepadhome_RecentSection_39tNv .basicgamecarousel_Featured_2eJEJ {
-	width: var(--RWB-capsule-width) !important;
+	width: var(--RWB-end-width) !important;
 }
 
 /* move capsules to left */
 .gamepadhome_RecentSection_39tNv .ReactVirtualized__Grid__innerScrollContainer > div:not(:first-child) {
-	transform: translateX(var(--RWB-translate-x));
+	transform: translateX( calc(var(--RWB-end-width) - var(--RWB-beg-width)) );
 }
 
 /* set banner image height to the banner's */

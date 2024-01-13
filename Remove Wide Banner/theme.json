@@ -2,8 +2,8 @@
 	"name": "Remove Wide Banner",
 	"author": "zWolfrost",
 	"target": "Tweak",
-	"version": "v2.2",
-	"description": "This theme will replace the wide capsule banner of the last played game aka featured game with a capsule.",
+	"version": "v3.0",
+	"description": "This theme will replace the banner of the last played game aka featured game with a capsule or a square, depending on your preference.",
 	"manifest_version": 5,
 	"inject": {
 		"shared.css": [
@@ -17,22 +17,31 @@
 			"default": "Cover",
 			"values": {
 				"Cover": {
-					"image-fit-cover.css": [
-						"bigpicture"
-					]
+					"--RWB-image-fit": ["cover", "bigpicture"]
 				},
 				"Fill": {
-					"image-fit-fill.css": [
-						"bigpicture"
-					]
+					"--RWB-image-fit": ["fill", "bigpicture"]
 				},
 				"Contain": {
-					"image-fit-contain.css": [
-						"bigpicture"
-					]
+					"--RWB-image-fit": ["contain", "bigpicture"]
 				}
 			},
 			"components": []
-		}
+		},
+		"Final Shape": {
+			"type": "dropdown",
+			"default": "Capsule",
+			"values": {
+				"Capsule": {
+					"--RWB-end-width": ["133px", "bigpicture"]
+				},
+				"Square": {
+					"--RWB-end-width": ["199.5px", "bigpicture"]
+				},
+				"Banner": {
+					"--RWB-end-width": ["426.837px", "bigpicture"]
+				}
+			}
+	   }
 	}
 }
