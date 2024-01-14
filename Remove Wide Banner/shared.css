@@ -12,11 +12,6 @@
 	transform: translateY(-280%) translateX(56px) scaleX(22) scaleY(7);
 }
 
-/* move carousel to left */
-.gamepadhome_RecentSection_39tNv .ReactVirtualized__Grid__innerScrollContainer {
-	transform: translateX( calc(var(--RWB-end-width) - var(--RWB-beg-width)) );
-}
-
 /* move banner to right */
 .gamepadhome_RecentSection_39tNv .ReactVirtualized__Grid__innerScrollContainer > div:first-child {
 	transform: translateX( calc(var(--RWB-beg-width) - var(--RWB-end-width)) );
