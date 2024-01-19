@@ -1,4 +1,0 @@
-/* move carousel to left */
-.gamepadhome_RecentSection_39tNv .ReactVirtualized__Grid__innerScrollContainer {
-	transform: translateX( calc(var(--RWB-end-width) - var(--RWB-beg-width)) );
-}

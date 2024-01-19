@@ -26,3 +26,8 @@
 .gamepadhome_RecentSection_39tNv .appportrait_FeaturedCapsule_xp7A- img {
    object-fit: var(--RWB-image-fit) !important;
 }
+
+/* shift carousel to left */
+.gamepadhome_RecentSection_39tNv .ReactVirtualized__Grid__innerScrollContainer {
+	transform: translateX( calc( (var(--RWB-end-width) - var(--RWB-beg-width)) * var(--RWB-shift-multiplier) ) );
+}

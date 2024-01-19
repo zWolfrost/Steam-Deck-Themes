@@ -3,7 +3,7 @@
 	"display_name": "Edit Featured Banner",
 	"author": "zWolfrost",
 	"target": "Tweak",
-	"version": "v4.0",
+	"version": "v5.0",
 	"description": "This theme will edit the banner of the last played game aka featured game to be a capsule or a square (depending on your preference).",
 	"manifest_version": 9,
 	"inject": {
@@ -13,18 +13,6 @@
 	},
 	"dependencies": {},
 	"patches": {
-		"Move Carousel To Left": {
-			"type": "checkbox",
-			"default": "Yes",
-			"values": {
-				"Yes": {
-					"movecarousel.css": ["bigpicture"]
-				},
-				"No": {
-				}
-			},
-			"components": []
-		},
 		"Image Fit": {
 			"type": "dropdown",
 			"default": "Cover",
@@ -56,6 +44,21 @@
 				}
 			},
 			"components": []
-	   }
+	   },
+		"Carousel Left Shift": {
+			"type": "slider",
+			"default": "Full",
+			"values": {
+				"None": {
+					"--RWB-shift-multiplier": ["0", "bigpicture"]
+				},
+				"Half": {
+					"--RWB-shift-multiplier": ["0.5", "bigpicture"]
+				},
+				"Full": {
+					"--RWB-shift-multiplier": ["1", "bigpicture"]
+				}
+			}
+		}
 	}
 }
